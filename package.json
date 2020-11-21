@@ -1,0 +1,29 @@
+{
+	"name": "@art-of-coding/routed-worker",
+	"version": "0.0.1",
+	"description": "A handier way to handle bullmq jobs",
+	"author": {
+		"name": "Michiel van der Velde",
+		"email": "michiel@michielvdvelde.nl",
+		"url": "http://michielvdvelde.nl"
+	},
+	"license": "MIT",
+	"keywords": [
+		"bullmq",
+		"worker"
+	],
+	"engines": {
+		"node": "=>10"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Art-of-Coding/routed-worker.git"
+	},
+	"bugs": {
+		"url": "https://github.com/Art-of-Coding/routed-worker/issues"
+	},
+	"homepage": "https://github.com/Art-of-Coding/routed-worker",
+	"peerDependencies": {
+		"bullmq": "^1.10.0"
+	}
+}
