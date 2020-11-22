@@ -15,6 +15,9 @@
 	"engines": {
 		"node": "=>10"
 	},
+	"files": [
+		"./dist/**/*"
+	],
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/Art-of-Coding/routed-worker.git"
