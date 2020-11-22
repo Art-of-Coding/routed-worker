@@ -5,7 +5,7 @@ Worker extension for [bullmq](https://github.com/taskforcesh/bullmq).
 This worker allows you to register handlers for specific job names within
 the queue. The example shows how this package is used.
 
-bullmq is a peer depencendy, you'll need to install it yourself.
+bullmq is a peer dependency, you'll need to install it yourself.
 
 ## Install
 
