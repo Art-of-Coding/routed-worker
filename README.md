@@ -5,6 +5,14 @@ Worker extension for [bullmq](https://github.com/taskforcesh/bullmq).
 This worker allows you to register handlers for specific job names within
 the queue. The example shows how this package is used.
 
+bullmq is a peer depencendy, you'll need to install it yourself.
+
+## Install
+
+```
+npm i @art-of-coding/routed-worker bullmq [--save]
+```
+
 ## Example
 
 ```ts
@@ -12,7 +20,7 @@ import RoutedWorker, {
     Job
 } from './index'
 
-// create a new named worker with the queue name 'Example'
+// create a new routed worker with the queue name 'Example'
 const worker = new RoutedWorker('Example')
 
 // Interface for job data
