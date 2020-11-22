@@ -3,6 +3,7 @@
 import {
     Job,
     Worker,
+    Processor,
     WorkerOptions
 } from 'bullmq'
 
@@ -14,7 +15,7 @@ export default class RoutedWorker {
     public readonly queueName: string
     public readonly workerOpts: WorkerOptions
 
-    readonly #routes: Map<string, (job: Job) => Promise<any>> = new Map()
+    readonly #routes: Map<string, Processor> = new Map()
     #worker: Worker
 
     public constructor (
@@ -39,7 +40,7 @@ export default class RoutedWorker {
 
     public on (
         name: string,
-        handler: (job: Job) => Promise<any>
+        handler: Processor
     ): this {
         this.#routes.set(name, handler)
         return this
