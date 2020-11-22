@@ -1,4 +1,4 @@
-# NamedWorker
+# Routed Worker for bullmq
 
 Worker extension for [bullmq](https://github.com/taskforcesh/bullmq).
 
