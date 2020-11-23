@@ -33,16 +33,16 @@ export default class RoutedWorker {
 
         this.#worker = new Worker(
             this.queueName,
-            this.handle.bind(this),
+            this.process.bind(this),
             this.workerOpts
         )
     }
 
     public on (
         name: string,
-        handler: Processor
+        processor: Processor
     ): this {
-        this.#routes.set(name, handler)
+        this.#routes.set(name, processor)
         return this
     }
 
@@ -55,7 +55,7 @@ export default class RoutedWorker {
         this.#worker = null
     }
 
-    private handle (
+    private async process (
         job: Job
     ): Promise<any> {
         const route = this.#routes.get(job.name)
