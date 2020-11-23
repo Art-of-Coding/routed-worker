@@ -46,6 +46,13 @@ export default class RoutedWorker {
         return this
     }
 
+    public off (
+        name: string
+    ): this {
+        this.#routes.delete(name)
+        return this
+    }
+
     public async close (
         force?: boolean
     ): Promise<void> {
