@@ -46,12 +46,14 @@ export default class RoutedWorker {
         return this
     }
 
-    public async close (): Promise<void> {
+    public async close (
+        force?: boolean
+    ): Promise<void> {
         if (!this.#worker) {
             return
         }
 
-        await this.#worker.close()
+        await this.#worker.close(force)
         this.#worker = null
     }
 
