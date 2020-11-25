@@ -27,6 +27,6 @@
 	},
 	"homepage": "https://github.com/Art-of-Coding/routed-worker",
 	"peerDependencies": {
-		"bullmq": "^1.10.0"
+		"bullmq": "^1.11.0"
 	}
 }
