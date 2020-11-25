@@ -1,6 +1,6 @@
 {
 	"name": "@art-of-coding/routed-worker",
-	"version": "0.0.5",
+	"version": "0.0.6",
 	"description": "A handier way to handle bullmq jobs",
 	"author": {
 		"name": "Michiel van der Velde",
